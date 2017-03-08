@@ -12,7 +12,7 @@ namespace OrleansClient
     {
         static int Main(string[] args)
         {
-            var config = ClientConfiguration.LocalhostSilo();
+            var config = ClientConfiguration.LocalhostSilo(gatewayPort: 30000);
             try
             {
                 InitializeWithRetries(config, initializeAttemptsBeforeFailing: 5);

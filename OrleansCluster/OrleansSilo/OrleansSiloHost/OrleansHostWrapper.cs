@@ -24,7 +24,11 @@ namespace OrleansSilo.OrleansSiloHost
                 config.Globals.DeploymentId = siloArgs.DeploymentId;
             }
 
-            _siloHost = new SiloHost(siloArgs.SiloName, config);
+            _siloHost = new SiloHost(siloArgs.SiloName, config)
+            {
+                ConfigFileName = "OrleansConfiguration.xml"
+            };
+
             _siloHost.LoadOrleansConfig();
         }
 

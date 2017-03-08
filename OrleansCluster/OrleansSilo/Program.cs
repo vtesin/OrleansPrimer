@@ -25,7 +25,7 @@ namespace OrleansSilo
         private static int StartSilo(string[] args)
         {
             // define the cluster configuration
-            var config = ClusterConfiguration.LocalhostPrimarySilo();
+            var config = ClusterConfiguration.LocalhostPrimarySilo(siloPort: 11111, gatewayPort: 30000);
             config.AddMemoryStorageProvider();
 
             _hostWrapper = new OrleansHostWrapper(config, args);
