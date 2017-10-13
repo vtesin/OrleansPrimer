@@ -481,37 +481,5 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="M:Acme.Slots.WebApi.Controllers.ValuesController.Get">
-            <summary>
-            Get all the values that are currently stored in the system
-            </summary>
-            <returns>List of values</returns>
-        </member>
-        <member name="M:Acme.Slots.WebApi.Controllers.ValuesController.Get(System.Int32)">
-            <summary>
-            Get the value by id
-            </summary>
-            <param name="id">Id of the value to retreive</param>
-            <returns>A value</returns>
-        </member>
-        <member name="M:Acme.Slots.WebApi.Controllers.ValuesController.Post(System.String)">
-            <summary>
-            Post it!
-            </summary>
-            <param name="value">Value to post</param>
-        </member>
-        <member name="M:Acme.Slots.WebApi.Controllers.ValuesController.Put(System.Int32,System.String)">
-            <summary>
-            Put a value into the system
-            </summary>
-            <param name="id">An Id of the value</param>
-            <param name="value">Actual value</param>
-        </member>
-        <member name="M:Acme.Slots.WebApi.Controllers.ValuesController.Delete(System.Int32)">
-            <summary>
-            Deletes a value from the system
-            </summary>
-            <param name="id">An Id of the value</param>
-        </member>
     </members>
 </doc>
